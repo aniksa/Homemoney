@@ -7,13 +7,17 @@
 //
 
 #import "HomemoneyAppDelegate.h"
-
 #import "HomemoneyMainViewController.h"
+#import "User.h"
 
 @implementation HomemoneyAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    /*User* var1  = [User userWithName:@"Anna" andPassword:@"1111"];
+    var1.username = @"Anna";
+    [var1 logOut];
+*/        
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {

@@ -7,6 +7,7 @@
 //
 
 #import "HomemoneyMainViewController.h"
+#import "User.h"
 
 @interface HomemoneyMainViewController ()
 
@@ -59,4 +60,11 @@
     }
 }
 
+- (IBAction)loginAction:(id)sender {
+    User* user = [[User alloc]init];
+    user.username = self.txtEmail.text;
+    user.password = self.txtPassword.text;
+    NSLog(@"%@ %@",user.username,user.password);
+    
+}
 @end

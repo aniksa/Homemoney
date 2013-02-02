@@ -12,6 +12,13 @@
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
-- (IBAction)showInfo:(id)sender;
+
+
+- (IBAction)loginAction:(id)sender;
+
+
+@property (strong, nonatomic) IBOutlet UITextField *txtEmail;
+@property (strong, nonatomic) IBOutlet UITextField *txtPassword;
+
 
 @end

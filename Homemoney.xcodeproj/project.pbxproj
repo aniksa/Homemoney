@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95EECEB416BAE6C400E24342 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EECEB316BAE6C400E24342 /* User.m */; };
 		95F415F016B70A6900F5C774 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F415EF16B70A6900F5C774 /* UIKit.framework */; };
 		95F415F216B70A6900F5C774 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F415F116B70A6900F5C774 /* Foundation.framework */; };
 		95F415F416B70A6900F5C774 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F415F316B70A6900F5C774 /* CoreGraphics.framework */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95EECEB216BAE6C400E24342 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		95EECEB316BAE6C400E24342 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		95F415EB16B70A6900F5C774 /* Homemoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homemoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F415EF16B70A6900F5C774 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		95F415F116B70A6900F5C774 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 				95F4161016B70A6900F5C774 /* HomemoneyMainViewController_iPad.xib */,
 				95F4161316B70A6900F5C774 /* HomemoneyFlipsideViewController.xib */,
 				95F415F616B70A6900F5C774 /* Supporting Files */,
+				95EECEB216BAE6C400E24342 /* User.h */,
+				95EECEB316BAE6C400E24342 /* User.m */,
 			);
 			path = Homemoney;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				95F4160016B70A6900F5C774 /* HomemoneyAppDelegate.m in Sources */,
 				95F4160916B70A6900F5C774 /* HomemoneyMainViewController.m in Sources */,
 				95F4160C16B70A6900F5C774 /* HomemoneyFlipsideViewController.m in Sources */,
+				95EECEB416BAE6C400E24342 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +331,7 @@
 				95F4161A16B70A6900F5C774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
