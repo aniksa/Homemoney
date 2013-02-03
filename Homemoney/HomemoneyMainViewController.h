@@ -7,14 +7,19 @@
 //
 
 #import "HomemoneyFlipsideViewController.h"
+#import "RegistrationViewController.h"
+
 
 @interface HomemoneyMainViewController : UIViewController <HomemoneyFlipsideViewControllerDelegate>
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
+@property (strong, nonatomic) RegistrationViewController   *regViewController;
+
 
 
 - (IBAction)loginAction:(id)sender;
+- (IBAction)joinPressed:(id)sender;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *txtEmail;

@@ -8,6 +8,7 @@
 
 #import "HomemoneyMainViewController.h"
 #import "User.h"
+#import "Student.h"
 
 @interface HomemoneyMainViewController ()
 
@@ -64,7 +65,13 @@
     User* user = [[User alloc]init];
     user.username = self.txtEmail.text;
     user.password = self.txtPassword.text;
-    NSLog(@"%@ %@",user.username,user.password);
+    NSLog(@"%@ %@",user.username,user.password);    
+}
+
+- (IBAction)joinPressed:(id)sender {
+    RegistrationViewController *controller = [[RegistrationViewController  alloc] initWithNibName:@"RegistrationViewController" bundle:nil];
+    [controller viewDidLoad];
+    NSLog(@"join");
     
 }
 @end

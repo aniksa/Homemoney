@@ -22,6 +22,10 @@
 		95F4160F16B70A6900F5C774 /* HomemoneyMainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F4160D16B70A6900F5C774 /* HomemoneyMainViewController_iPhone.xib */; };
 		95F4161216B70A6900F5C774 /* HomemoneyMainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F4161016B70A6900F5C774 /* HomemoneyMainViewController_iPad.xib */; };
 		95F4161516B70A6900F5C774 /* HomemoneyFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F4161316B70A6900F5C774 /* HomemoneyFlipsideViewController.xib */; };
+		95F8187416BD4A18006AC040 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8187316BD4A18006AC040 /* Human.m */; };
+		95F8187716BD4AA4006AC040 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8187616BD4AA4006AC040 /* Student.m */; };
+		95F8187D16BD56EE006AC040 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8187B16BD56ED006AC040 /* RegistrationViewController.m */; };
+		95F8187E16BD56EE006AC040 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F8187C16BD56ED006AC040 /* RegistrationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,13 @@
 		95F4160E16B70A6900F5C774 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomemoneyMainViewController_iPhone.xib; sourceTree = "<group>"; };
 		95F4161116B70A6900F5C774 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomemoneyMainViewController_iPad.xib; sourceTree = "<group>"; };
 		95F4161416B70A6900F5C774 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomemoneyFlipsideViewController.xib; sourceTree = "<group>"; };
+		95F8187216BD4A18006AC040 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		95F8187316BD4A18006AC040 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		95F8187516BD4AA4006AC040 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		95F8187616BD4AA4006AC040 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		95F8187A16BD56ED006AC040 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		95F8187B16BD56ED006AC040 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		95F8187C16BD56ED006AC040 /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +114,10 @@
 				95F4161016B70A6900F5C774 /* HomemoneyMainViewController_iPad.xib */,
 				95F4161316B70A6900F5C774 /* HomemoneyFlipsideViewController.xib */,
 				95F415F616B70A6900F5C774 /* Supporting Files */,
-				95EECEB216BAE6C400E24342 /* User.h */,
-				95EECEB316BAE6C400E24342 /* User.m */,
+				95F8187016BD49DF006AC040 /* Models */,
+				95F8187A16BD56ED006AC040 /* RegistrationViewController.h */,
+				95F8187B16BD56ED006AC040 /* RegistrationViewController.m */,
+				95F8187C16BD56ED006AC040 /* RegistrationViewController.xib */,
 			);
 			path = Homemoney;
 			sourceTree = "<group>";
@@ -121,6 +134,19 @@
 				95F4160516B70A6900F5C774 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95F8187016BD49DF006AC040 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95EECEB216BAE6C400E24342 /* User.h */,
+				95EECEB316BAE6C400E24342 /* User.m */,
+				95F8187216BD4A18006AC040 /* Human.h */,
+				95F8187316BD4A18006AC040 /* Human.m */,
+				95F8187516BD4AA4006AC040 /* Student.h */,
+				95F8187616BD4AA4006AC040 /* Student.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +208,7 @@
 				95F4160F16B70A6900F5C774 /* HomemoneyMainViewController_iPhone.xib in Resources */,
 				95F4161216B70A6900F5C774 /* HomemoneyMainViewController_iPad.xib in Resources */,
 				95F4161516B70A6900F5C774 /* HomemoneyFlipsideViewController.xib in Resources */,
+				95F8187E16BD56EE006AC040 /* RegistrationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +224,9 @@
 				95F4160916B70A6900F5C774 /* HomemoneyMainViewController.m in Sources */,
 				95F4160C16B70A6900F5C774 /* HomemoneyFlipsideViewController.m in Sources */,
 				95EECEB416BAE6C400E24342 /* User.m in Sources */,
+				95F8187416BD4A18006AC040 /* Human.m in Sources */,
+				95F8187716BD4AA4006AC040 /* Student.m in Sources */,
+				95F8187D16BD56EE006AC040 /* RegistrationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
