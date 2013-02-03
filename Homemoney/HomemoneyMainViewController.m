@@ -70,7 +70,7 @@
 
 - (IBAction)joinPressed:(id)sender {
     RegistrationViewController *controller = [[RegistrationViewController  alloc] initWithNibName:@"RegistrationViewController" bundle:nil];
-    [controller viewDidLoad];
+    [self presentViewController:controller animated:YES completion:nil];
     NSLog(@"join");
     
 }

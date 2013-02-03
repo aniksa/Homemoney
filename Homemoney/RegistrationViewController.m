@@ -39,5 +39,6 @@
 
 - (IBAction)joinPressed:(id)sender {
     Student *st = [Student studentWithName:self.txtName.text andLastName:self.txtLastName.text];
+    NSLog(@"name %@, last name %@\n",st.name,st.lastName);
 }
 @end
