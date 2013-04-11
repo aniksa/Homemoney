@@ -1,45 +1,18 @@
-//
-//  HomemoneyFlipsideViewController.m
-//  Homemoney
-//
-//  Created by anna on 1/28/13.
-//  Copyright (c) 2013 aniksa. All rights reserved.
-//
+precision mediump float;
+varying vec2 v_uv; //original texture coords
+uniform sampler2D u_texture_0; //fire
+uniform sampler2D u_texture_1; //fire_mask
+uniform sampler2D u_texture_2; //displacement map
+uniform float u_Time;
+uniform float u_ampFactor;
 
-#import "HomemoneyFlipsideViewController.h"
-
-@interface HomemoneyFlipsideViewController ()
-
-@end
-
-@implementation HomemoneyFlipsideViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+void main()
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
-    }
-    return self;
-}
-							
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+	vec2 disp = texture2D(u_texture_2, vec2(v_uv.x, v_uv.y + u_Time)).rg;
+	vec2 offset = (2.0 * disp - 1.0) * u_ampFactor;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	vec2 new_uv = v_uv + offset;
+	vec4 AlphaValue = texture2D(u_texture_1, v_uv);
+
+	gl_FragColor = texture2D (u_texture_0, new_uv) * (1.0, 1.0, 1.0, AlphaValue.r);
 }
-
-#pragma mark - Actions
-
-- (IBAction)done:(id)sender
-{
-    [self.delegate flipsideViewControllerDidFinish:self];
-}
-
-@end
